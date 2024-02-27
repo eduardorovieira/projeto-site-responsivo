@@ -13,10 +13,6 @@ html {
         width: 100%;
         margin: 0 auto;
     }
-
-    body {
-        background-color: aliceblue;
-    }
     
     header {
         background-color: blue;
