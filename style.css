@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+/*Desktop*/
+    .container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    header {
+        background-color: blue;
+        color: white;
+        z-index: 1;
+        font-family: "Poppins", sans-serif;
+    }
+    
+    
+    header h1{
+        font-size: 43px;
+        font-style: italic;
+    }
+    
+    header .container {
+        padding: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav li {
+        display: inline;
+    }
+    
+    nav li a {
+        color: white;
+        text-decoration: none;
+        padding: 1em;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+
+    
+    h2 {
+        margin-bottom: 1.3em;
+        font-weight: bold;
+        font-size: 2em;
+        border-bottom: blue solid 2px;
+        padding-bottom: 0.5em;
+        font-family: "Poppins", sans-serif;
+    }
+    
+    h3 {
+        margin-bottom: 1em;
+    }
+    
+    button{
+        width: 100%;
+        padding: 8px 0;
+        margin-top: 1em;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 1em;
+        font-weight: bold;
+    }
+    
+    .sobre-a-loja {
+        max-width: 100%;
+        margin-bottom: 75px;
+        display: flex;
+        font-family: "Poppins", sans-serif;
+    }
+    
+    .sobre-a-loja {
+        margin-left: 5px;
+        align-items: center;
+    }
+    
+    .sobre-a-loja p {
+        text-align: justify;
+        font-size: 1.3em;
+        margin-bottom: 1em;
+    }
+    
+    .produtos, .promocoes {
+        display: grid;
+        grid-template-columns: repeat(3, 32.6%);
+        column-gap: 1%;
+        row-gap: 3%;
+        margin-bottom: 75px;
+        font-family: "Poppins", sans-serif;
+        padding-bottom: 50px;
+    }
+    
+    .conteudo p {
+        font-size: 17px;
+    }
+    
+    .conteudo h3 {
+        font-size: 22px;
+    }
+    
+    
+    .conteudo img {
+        border-radius: 8px;
+        width: 100%;
+    }
+    
+    .sobre-a-loja img {
+        border-radius: 8px;
+        width: 50%;
+    }
+
+/*Tablet*/
+@media screen and (max-width:  1023px) {
+    .produtos, .promocoes {
+        font-size: 1em;
+        display: grid;
+        grid-template-columns: repeat(2, 49.5%);
+        column-gap: 1%;
+        row-gap: 3%;
+        width: 100%;
+        justify-content: center;
+    }
+    .container {
+        width: 90%;
+    }
+
+    .sobre-a-loja img {
+        width: 100%;
+        border-radius: 8px;
+    }
+    
+    .sobre-a-loja {
+        margin-top: 50px;
+        display: block;
+        justify-content: center;
+    }
+}
+
+
+/*Mobile*/
+@media screen and (max-width: 640px){
+    
+    .produtos, .promocoes {
+        font-size: 1em;
+        display: block;
+        width: 100%;
+        justify-content: center;
+        height: 97%;
+    }
+
+    .produtos, .promocoes p {
+        font-size: 1em;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .sobre-a-loja img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    button{
+        margin-bottom: 1em;
+        width: 100%;
+    }
+
+    .sobre-a-loja {
+        margin-top: 50px;
+        display: block;
+        justify-content: center;
+    }
+
+    .sobre-a-loja h2 {
+        margin-top: 10px;
+    }
+
+    .sobre-a-loja p {
+        font-size: 20px;
+    }
+
+    header .container {
+        display: block;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    nav {
+        display: none;
+    };
+}
